@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bbb" >
+
+    <ImageButton
+        android:id="@+id/exitt"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="165dp"
+        android:background="@drawable/exit"
+        android:textColor="#dd0000"
+        android:text="Exit" />
+
+    <TextView
+        android:id="@+id/totals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/restart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:textColor="#dd0000"
+        android:textSize="20pt"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <ImageButton
+        android:id="@+id/restart"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/exitt"
+        android:layout_alignLeft="@+id/exitt"
+        android:background="@drawable/rest"
+        android:gravity="center"
+        android:text="Restart"
+        android:textColor="#008000" />
+
+</RelativeLayout>

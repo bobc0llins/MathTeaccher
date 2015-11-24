@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bakak" >
+
+    <TextView
+        android:id="@+id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/add"
+        android:layout_marginRight="42dp"
+        android:layout_marginTop="28dp"
+        android:onClick="divide"
+        android:text="Divide"
+        android:textColor="#dd0000"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/multiply"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="78dp"
+        android:text="Add"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:onClick="subtract"
+        android:text="Subtract"
+        android:textColor="#dd0000"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/divide"
+        android:layout_below="@+id/subtract"
+        android:layout_marginTop="30dp"
+        android:onClick="multiply"
+        android:text="Multiply"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+
+    <ImageButton
+        android:id="@+id/exitt"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/divide"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/exit"
+        android:text="Exit"
+        android:textColor="#dd0000" />
+
+</RelativeLayout>

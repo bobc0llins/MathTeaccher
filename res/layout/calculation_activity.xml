@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bbb"
+     >
+    
+    
+  
+    
+    <EditText
+        android:id="@+id/answerentered"
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_below="@+id/secndnum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:hint="Please Enter your Answer"
+        android:inputType="number"
+        android:textColor="#dd0000" />
+    
+    
+    <Button
+        android:id="@+id/clicktoanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+   
+        android:layout_below="@+id/answerentered"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Answer" />
+
+    <TextView
+        android:id="@+id/secndnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/answerentered"
+        android:textColor="#008000"
+        android:textSize="50pt" />
+
+    <TextView
+        android:id="@+id/firstnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/answerentered"
+        android:layout_toLeftOf="@+id/answerentered"
+        android:textColor="#dd0000"
+        android:textSize="50pt" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/clicktoanswer"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/marks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/answer"
+        android:layout_alignParentTop="true"
+        android:textSize="14pt" />
+
+    <TextView
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/marks"
+        android:layout_below="@+id/marks"
+        android:textColor="#000000"
+        android:textSize="30pt" />
+
+    <ImageView
+        android:id="@+id/animate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@+id/clicktoanswer"
+        android:src="@drawable/g7" />
+
+</RelativeLayout>
